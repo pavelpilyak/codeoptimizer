@@ -1,1 +1,1 @@
-rootProject.name = "easy-sql"
+rootProject.name = "ai-optimizer"

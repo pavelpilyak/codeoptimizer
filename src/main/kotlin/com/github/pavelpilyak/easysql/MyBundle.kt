@@ -1,4 +1,4 @@
-package com.github.pavelpilyak.easysql
+package com.github.pavelpilyak.aioptimizer
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

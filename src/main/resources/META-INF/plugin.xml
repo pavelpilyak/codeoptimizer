@@ -1,18 +1,26 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.pavelpilyak.easysql</id>
-    <name>easy-sql Template</name>
+    <id>com.github.pavelpilyak.aioptimizer</id>
+    <name>ai-optimizer Template</name>
     <vendor>pavelpilyak</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.pavelpilyak.easysql.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-    </extensions>
+    <actions>
+        <action
+                id="com.github.pavelpilyak.aioptimizer.actions.OptimizeAction"
+                class="com.github.pavelpilyak.aioptimizer.actions.OptimizeAction"
+                text="Optimize with AI"
+                description="Optimizes this code with AI"
+                icon="AllIcons.Gutter.SuggestedRefactoringBulb"
+        >
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+    </actions>
 
     <applicationListeners>
-        <listener class="com.github.pavelpilyak.easysql.listeners.MyFrameStateListener" topic="com.intellij.ide.FrameStateListener"/>
+        <listener class="com.github.pavelpilyak.aioptimizer.listeners.MyFrameStateListener" topic="com.intellij.ide.FrameStateListener"/>
     </applicationListeners>
 </idea-plugin>

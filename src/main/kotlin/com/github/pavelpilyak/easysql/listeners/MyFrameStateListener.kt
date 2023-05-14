@@ -1,4 +1,4 @@
-package com.github.pavelpilyak.easysql.listeners
+package com.github.pavelpilyak.aioptimizer.listeners
 
 import com.intellij.ide.FrameStateListener
 import com.intellij.openapi.diagnostic.thisLogger

@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# easy-sql Changelog
+# ai-optimizer Changelog
 
 ## [Unreleased]
 ### Added
