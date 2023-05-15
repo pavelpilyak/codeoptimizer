@@ -32,7 +32,5 @@ class OptimizeAction : AnAction() {
         }
 
         ReformatCodeProcessor(project, false).run()
-
-//        PsiDocumentManager.getInstance(project!!).commitDocument(document!!)
     }
 }
